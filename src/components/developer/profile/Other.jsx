@@ -1,5 +1,5 @@
 const Other = () => {
-  return <div>Other</div>;
+  return <div className="h-2/6 bg-green-500">Other</div>;
 };
 
 export default Other;
