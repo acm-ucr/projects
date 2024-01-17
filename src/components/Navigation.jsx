@@ -1,7 +1,7 @@
 import Link from "next/link";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import Person2Icon from "@mui/icons-material/Person2";
-import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
+import { MdPerson } from "react-icons/md";
+import { MdOutlineListAlt } from "react-icons/md";
+import { MdOutlineCalendarMonth } from "react-icons/md";
 
 const Navigation = () => {
   return (
@@ -10,35 +10,33 @@ const Navigation = () => {
         href="/app/developer/profile"
         class="mb-4 flex items-center space-x-4"
       >
-        <Person2Icon className="text-2xl" />
+        <MdPerson className="text-2xl" />
         <span class="text-lg font-bold hover:underline">Profile</span>
       </Link>
       <Link
         href="/app/developer/interviews"
         class="mb-4 flex items-center space-x-4"
       >
-        <CalendarMonthIcon className="text-2xl" />
+        <MdOutlineCalendarMonth className="text-2xl" />
         <span class="text-lg font-bold hover:underline">Interviews</span>
       </Link>
       <Link
         href="/app/developer/applications"
         class="mb-4 flex items-center space-x-4"
       >
-        <FormatListBulletedIcon className="text-2xl" />
+        <MdOutlineListAlt className="text-2xl" />
         <span class="text-lg font-bold hover:underline">Applications</span>
       </Link>
-      <Link href="/app/developer/" class="mb-4 flex items-center space-x-4">
-        <FormatListBulletedIcon className="text-2xl" />
+      <Link href="/app/developer/forms" class="mb-4 flex items-center space-x-4">
+        <MdOutlineListAlt className="text-2xl" />
         <span class="text-lg font-bold hover:underline">Forms</span>
       </Link>
-      <Link
-        href="#"
-        onClick={handleLogout}
+      <div
+        onClick={console.log("Logged out")}
         className="mb-4 flex items-center space-x-4"
       >
-        <Link className="text-2xl" />
         <span class="text-lg font-bold hover:underline">Log Out</span>
-      </Link>
+      </div>
     </div>
   );
 };
