@@ -1,4 +1,5 @@
 /* eslint-disable new-cap */
+import Navigation from "@/components/Navigation";
 import "./globals.css";
 import { Lexend } from "next/font/google";
 
@@ -12,6 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Navigation />
       <body className={lexend.className}>{children}</body>
     </html>
   );
