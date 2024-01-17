@@ -13,6 +13,10 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@auth0/nextjs-auth0": "^3.5.0",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.5",
     "next": "^14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
