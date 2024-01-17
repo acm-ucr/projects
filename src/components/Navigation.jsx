@@ -27,7 +27,10 @@ const Navigation = () => {
         <MdOutlineListAlt className="text-2xl" />
         <span class="text-lg font-bold hover:underline">Applications</span>
       </Link>
-      <Link href="/app/developer/forms" class="mb-4 flex items-center space-x-4">
+      <Link
+        href="/app/developer/forms"
+        class="mb-4 flex items-center space-x-4"
+      >
         <MdOutlineListAlt className="text-2xl" />
         <span class="text-lg font-bold hover:underline">Forms</span>
       </Link>
