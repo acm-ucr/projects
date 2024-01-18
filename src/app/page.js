@@ -1,5 +1,10 @@
+import ProfileOther from "@/components/developer/ProfileOther";
 const Home = () => {
-  return <>Hello World</>;
+  return (
+    <>
+      <ProfileOther />
+    </>
+  );
 };
 
 export default Home;
