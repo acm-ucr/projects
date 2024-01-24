@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import pfp from "@/public/images/pfp.jpg";
 
 const Header = () => {
@@ -10,7 +9,7 @@ const Header = () => {
           className="rounded-md  h-full aspect-square"
           src={pfp}
           alt="profile picture"
-        ></Image>
+        />
       </div>
       <div className="w-full h-auto px-2 flex flex-col align-start justify-center">
         <div className="flex flex-row items-center gap-4 text-center">
