@@ -1,5 +1,5 @@
 import Image from "next/image";
-import pfp from "@/public/images/pfp.jpg";
+import pfp from "@/public/images/pfp.webp";
 
 const Header = () => {
   return (
