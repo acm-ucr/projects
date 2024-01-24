@@ -1,18 +1,24 @@
 const colors = {
-  green: {
-    bg: "bg-green-500",
-  },
   blue: {
-    bg: "bg-blue-500",
+    bg: "bg-projects-blue",
   },
   purple: {
-    bg: "bg-purple-500",
-  },
-  orange: {
-    bg: "bg-orange-500",
+    bg: "bg-projects-purple",
   },
   red: {
-    bg: "bg-red-500",
+    bg: "bg-projects-red",
+  },
+  orange: {
+    bg: "bg-projects-orange",
+  },
+  green: {
+    bg: "bg-projects-green",
+  },
+  black: {
+    bg: "bg-projects-black",
+  },
+  gray: {
+    bg: "bg-projects-gray",
   },
 };
 
