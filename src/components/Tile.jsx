@@ -1,11 +1,21 @@
 const Tile = ({ title, button, subtitle, hint, color }) => {
   return (
     <>
-      <div className="font-extrabold text-orange-500"> {hint} </div>
-
-      <div className="bg-orange-500 w-fit p-4">
-        <div>{title} </div>
-        <div className="p-2 border-4 border-width "> {button}</div>
+      <div className="bg-slate-800 h-64">
+        <div className="font-extrabold text-m text-orange-400 list-disc mx-4">
+          {" "}
+          <li>{hint}</li>{" "}
+        </div>
+        <div className="bg-orange-400 rounded-lg w-72 h-48 mx-4">
+          <div className="font-extrabold text-xl box-content h-32 p-2 mx-2">
+            {title}{" "}
+          </div>
+          <div className=""> {subtitle}</div>
+          <div className="font-bold mx-48 border-x-2 border-y-2 w-16 h-8 pl-2 rounded-lg border-black ">
+            {" "}
+            {button}
+          </div>
+        </div>
       </div>
     </>
   );

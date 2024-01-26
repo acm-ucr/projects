@@ -7,7 +7,7 @@ const Home = () => {
         title="ACM Designer "
         button="view"
         hint="interview not scheduled"
-        color="projects-red"
+        color="orange"
       />{" "}
     </>
   );
