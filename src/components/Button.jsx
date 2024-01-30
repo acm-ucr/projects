@@ -1,4 +1,4 @@
-const Button = ({ buttonText, onClick, textColor, borderColor }) => {
+const Button = ({ text, onClick, color, border }) => {
   const colors = {
     blue: {
       border: "border-blue-500",
@@ -37,11 +37,9 @@ const Button = ({ buttonText, onClick, textColor, borderColor }) => {
   return (
     <button
       onClick={onClick}
-      className={`px-4 border-2 rounded-2xl ${colors[borderColor]?.border} ${
-        textColor ? colors[textColor]?.textColor : "text-slate-50"
-      } m-2`}
+      className={`px-4 border-2 rounded-2xl ${colors[border].border} ${colors[color].textColor} m-2`}
     >
-      {buttonText}
+      {text}
     </button>
   );
 };
