@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 
 const colorMapping = {
@@ -13,7 +15,7 @@ const Tag = ({ text, color, isEditing = false }) => {
 
   return (
     <span
-      className={`inline-flex items-center px-4 py-2 rounded-lg ${computedClass} overflow-hidden`}
+      className={`inline-flex items-center px-4 py-2 rounded-full ${computedClass} overflow-hidden`}
     >
       {isEditing ? (
         <input
