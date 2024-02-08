@@ -1,5 +1,7 @@
+import Error from "@/components/Error";
+
 const NotFound = () => {
-  return <div>404 Page Not Found</div>;
+  return <Error status="404" name="Page not Found" />;
 };
 
 export default NotFound;

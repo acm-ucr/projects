@@ -12,7 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={lexend.className}>{children}</body>
+      <body
+        className={`${lexend.className} bg-projects-black flex flex-col items-center justify-center min-h-screen`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
