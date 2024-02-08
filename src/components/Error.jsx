@@ -1,29 +1,17 @@
 import Link from "next/link";
 
-const Error = ({ error }) => {
+const Error = ({ status, name, message }) => {
   return (
-    <div className="flex flex-col h-full bg-projects-black text-white">
-      <div className="relative top-1/4" style={{ marginLeft: "17%" }}>
-        <p className="text-9xl font-thin">{error}</p>
-        <p className="text-4xl font-thin">
-          {error === "404" ? "page not found" : "internal server error"}
+    <>
+      <p className="text-9xl font-thin text-white">{status}</p>
+      <p className="text-4xl font-thin text-white">{name}</p>
+      <p className="text-4xl font-thin text-white">{message}</p>
+      <Link href="/" className="text-white">
+        <p className="px-3 py-2 font-light my-8 border rounded-full w-fit">
+          go back to home
         </p>
-        {error === "500" && (
-          <>
-            <p className="text-xl font-bold">
-              please contact someone to help you
-            </p>
-          </>
-        )}
-        <div className="w-auto">
-          <Link href="/">
-            <button className="text-base font-light py-3.5 px-4 mt-2.5 border rounded-full">
-              go back to home
-            </button>
-          </Link>
-        </div>
-      </div>
-    </div>
+      </Link>
+    </>
   );
 };
 
